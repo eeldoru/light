@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="manage.js"></script>
+</head>
+<body>
+
+
+<div class="container">
+	<p class="alert alert-primary">
+		Бағдаршамның жұмысын жақсартуға арналған бағдарламалық қамтаманы әзірлеу
+	</p>
+	<p class="alert alert-success">
+		Разработка программного обеспечения для улучшения работы светофора
+	</p>
+	<p class="alert alert-info">
+	 	Development of  software for improving traffic lights operation
+	</p>
+	<br><br>
+
+	<div class="main">
+		<div class="left">
+			<img class="light" src="light.png" style="height: 300px;">
+			<div class="light-item light-top"></div>
+			<div class="light-item light-center"></div>
+			<div class="light-item light-bottom"></div>
+			<img src="noisy.png" class="noisy" style="display: none;">
+				
+		</div>
+		<div class="right">
+			
+			<div class="card js-light-state">
+			  <div class="card-header">
+			    Состояние светофора
+			  </div>
+			  <div class="card-body">
+			    <input type="radio" id="color3"
+			     name="color_count" value="color3">
+			    <label for="color3">Трехцветный режим</label>
+
+			    <input type="radio" id="color2"
+			     name="color_count" value="color2">
+			    <label for="color2">Двухцветный режим</label>
+
+			    <input type="radio" id="color_yellow"
+			     name="color_count" value="color_yellow">
+			    <label for="color_yellow">Мигающий жёлтый</label>
+			  </div>
+			</div>
+
+			<div class="card js-light-color">
+			  <div class="card-header">
+			    Цвета для ручного режима
+			  </div>
+			  <div class="card-body">
+			    <input type="radio" id="green"
+			     name="color" value="green">
+			    <label for="green"> Зеленый </label>
+
+			    <input type="radio" id="yellow"
+			     name="color" value="yellow">
+			    <label for="yellow"> Жёлтый </label>
+
+			    <input type="radio" id="red"
+			     name="color" value="red">
+			    <label for="red"> Красный </label>
+			  </div>
+			</div>
+
+
+			<div class="card js-light-work">
+			  <div class="card-header">
+			    Режимы работы
+			  </div>
+			  <div class="card-body">
+			    
+			    <input type="radio" id="auto"
+			     name="work" value="auto">
+			    <label for="auto"> Автоматический режим  </label>
+			    
+			    <input type="radio" id="hand"
+			     name="work" value="hand">
+			    <label for="hand"> Ручной режим </label>
+		    	
+			  </div>
+			</div>
+
+			<div class="card js-light-work">
+			  <div class="card-header">
+			    Опции(для автоматного режима)
+			  </div>
+			  <div class="card-body">
+			    
+			    <input type="checkbox" id="traffic"
+			     name="traffic">
+			    <label for="traffic"> Пробки на дороге  </label>
+			    
+			    <input type="checkbox" id="smoke"
+			     name="smoke">
+			    <label for="smoke"> Туман </label>
+
+			    <label> <b> Скорость </b> </label>
+			    
+			    <input type="radio" id="speed1"
+			     name="speed" value="1">
+			    <label for="speed1"> 1 </label>
+
+			    <input type="radio" id="speed2"
+			     name="speed" value="2">
+			    <label for="speed2"> 2 </label>
+			    
+			    <input type="radio" id="speed3"
+			     name="speed" value="3">
+			    <label for="speed3"> 3 </label>
+			    
+			    <input type="radio" id="speed4"
+			     name="speed" value="4">
+			    <label for="speed4"> 4 </label>
+			    
+
+			  </div>
+			</div>
+
+
+		</div>
+	</div>
+	
+</div>
+
+
+
+
+
+
+</body>
+</html>
